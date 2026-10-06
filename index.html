@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fullcourt — Scores, news and standings</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#top">FULL<b>COURT</b></a>
+<nav><a href="#news">News</a><a class="h" href="#table">Standings</a><a class="h" href="#fixtures">Fixtures</a></nav></div></header>
+
+<main id="top">
+<div class="board"><div class="wrap">
+  <h1>Every score, as it happens.</h1>
+  <p class="sub">Live games across football, basketball, tennis and cricket. Sample data for demonstration.</p>
+  <div class="games" id="games" aria-live="polite"></div>
+</div></div>
+
+<section id="news"><div class="wrap">
+  <div class="head"><h2>Top stories</h2><div class="tabs" id="tabs" role="group" aria-label="Filter stories by sport"></div></div>
+  <div class="news" id="newsGrid"></div>
+</div></section>
+
+<section id="table" style="padding-top:0"><div class="wrap split">
+  <div>
+    <div class="head"><h2>League table</h2><span style="color:var(--muted)">Premier Division · Matchweek 8</span></div>
+    <div class="scroll"><table><thead><tr><th>#</th><th>Club</th><th>P</th><th>W</th><th>D</th><th>L</th><th>Pts</th></tr></thead><tbody id="tbody"></tbody></table></div>
+  </div>
+  <div id="fixtures">
+    <div class="head"><h2>Next up</h2></div>
+    <ul class="fixtures" id="fix"></ul>
+  </div>
+</div></section>
+
+<div class="sign"><div class="wrap">
+  <h2>Get final scores in your inbox.</h2>
+  <form id="form"><input id="email" type="email" placeholder="you@example.com" aria-label="Email address"><button>Subscribe</button></form>
+</div></div>
+</main>
+<footer><div class="wrap">© 2026 Fullcourt. Teams, scores and stories are fictional sample content.</div></footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
